@@ -69,10 +69,11 @@ const handleBackground = ()=>{
           <a className={style.transparent} href="#" onMouseEnter={playGun} onClick={handleBackground}>
           <p><span className={style.bg}></span><span className={style.base}></span><span className={style.text}>{ playing ? 'Stop Soundtrack' : 'Play Soundtrack' }</span></p></a>
         </> :
-        <>         
-        <a style={{position:'absolute', bottom:'30px'}} href="#" onClick={handleAllowance}>
+        <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:'120px' }}>
+        <p className={style.warningText} >This website uses Audio interaction,<br/> please make sure your audio is in a safe volume</p>    
+        <a  href="#" onClick={handleAllowance}>
         <p><span className={style.bg}></span><span className={style.base}></span><span className={style.text}>Allow Audio</span></p></a>
-        </>
+        </div>
       }
     </div>
   )

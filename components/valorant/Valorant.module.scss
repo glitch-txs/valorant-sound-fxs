@@ -135,3 +135,15 @@ $transition: 0.3s ease-out all;
       }
     }
   }
+
+  .warningText{
+    font-size: 48px;
+    text-align: center;
+  }
+
+  @media (max-width:600px){
+    .warningText{
+      font-size: 28px;
+      margin: 50px 10px;
+    }
+  }
